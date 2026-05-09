@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Usuario</h1>
+    </header>
+
+    <main>
+        <section class="contenedor">
+
+           <img src="perfil.jpg"
+     alt="Foto de perfil"
+     class="perfil">
+
+            <form id="formulario">
+
+                <label>Nombre completo</label>
+                <input type="text" id="nombre" required>
+
+                <label>Correo electrónico</label>
+                <input type="email" id="correo" required>
+
+                <label>Contraseña</label>
+                <input type="password" id="password" required>
+                <small>Mínimo 8 caracteres</small>
+
+                <label>Fecha de nacimiento</label>
+                <input type="date" required>
+
+                <label>Color favorito</label>
+                <input type="color">
+
+                <label>País</label>
+                <input list="paises" placeholder="Selecciona tu país">
+
+                <datalist id="paises">
+                    <option value="México">
+                    <option value="Argentina">
+                    <option value="Colombia">
+                    <option value="Chile">
+                    <option value="España">
+                    <option value="Perú">
+                </datalist>
+
+                <button type="submit">Registrarse</button>
+
+            </form>
+
+            <div id="mensaje"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto de Registro de Usuario © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
